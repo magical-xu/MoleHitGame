@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    android:paddingRight="20dp">
+
+  <FrameLayout
+      android:layout_width="44dp"
+      android:layout_height="44dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="2dp">
+
+    <com.magical.molehitgame.base.HeadImageView
+        android:id="@+id/id_item_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:background="#f00" />
+
+    <ImageView
+        android:id="@+id/id_item_gender"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/chat_recommen_female" />
+  </FrameLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_item_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c7"
+        android:textSize="14sp"
+        tools:text="大宝So3" />
+
+    <TextView
+        android:id="@+id/id_item_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_favor_item_text_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/c7"
+        android:textSize="16sp"
+        tools:text="确认过眼神，我铁观音" />
+  </LinearLayout>
+
+</LinearLayout>
